@@ -1,0 +1,15 @@
+div {
+	width: 2.66667vw;
+	height: 4vw;
+	color: red;
+	font-size: 18px;
+	line-height: 2.66667vw;
+}
+/* skip-p2v */
+@media (max-width: 320px) {
+	div {
+		width: 5.33333vw;
+		font-size: 20px;
+		color: blue;
+	}
+}

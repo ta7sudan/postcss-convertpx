@@ -1,0 +1,19 @@
+div {
+	width: 3.125vw;
+	height: 4.6875vw;
+	color: red;
+	font-size: 18px;
+	font: bold 75px/1.17188vw;
+	line-height: 3.125vw;
+	border: 1px solid #000;
+}
+div::before {
+	content: "75px";
+}
+@media (max-width: 320px) {
+	div {
+		width: 6.25vw;
+		font-size: 20px;
+		color: blue;
+	}
+}

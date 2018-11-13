@@ -1,0 +1,12 @@
+div, a {
+	width: 75px;
+	font: bold 7.5px/75px;
+	font-size: 75px;
+	line-height: 75px;
+	border: 1px solid #000;
+	color: red;
+}
+
+div::before {
+	content: "75px";
+}

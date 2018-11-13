@@ -1,0 +1,14 @@
+div {
+	width: 2.66667vw;
+	height: 4vw;
+	color: red;
+	font-size: 18px;
+	line-height: 2.66667vw;
+}
+@media (max-width: 42.66667vw) {
+	div {
+		width: 5.33333vw;
+		font-size: 20px;
+		color: blue;
+	}
+}

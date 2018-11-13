@@ -1,21 +1,28 @@
 {
-  "name": "postcss-px-to-viewport",
-  "description": "A CSS post-processor that converts px to viewport units (vw, vh, vmin, vmax).",
-  "version": "0.0.3",
-  "author": "Dmitry Karpunin <koderfunk@gmail.com>",
-  "license": "MIT",
+  "name": "postcss-convertpx",
+  "version": "0.1.0",
+  "description": "convert px to viewport unit",
+  "main": "src/index.js",
+  "types": "types/index.d.ts",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "lint": "eslint src test",
+    "format": "prettier --config .prettierrc.js --write src/**/*.js test/**/*.js",
+    "inspect": "jsinspect src",
+    "test": "nyc ava -v",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "report": "nyc report --reporter=html"
+  },
   "repository": {
     "type": "git",
-    "url": "git@github.com:evrone/postcss-px-to-viewport.git"
+    "url": "git+https://github.com/ta7sudan/postcss-convertpx.git"
   },
-  "bugs": "https://github.com/evrone/postcss-px-to-viewport/issues",
-  "homepage": "https://github.com/evrone/postcss-px-to-viewport",
-  "main": "index.js",
   "keywords": [
     "css",
     "units",
     "pixel",
     "px",
+    "convert",
     "viewport",
     "vw",
     "vh",
@@ -24,8 +31,48 @@
     "postcss",
     "postcss-plugin"
   ],
-  "dependencies": {
-    "object-assign": "^4.0.1",
-    "postcss": "^5.0.2"
+  "author": "ta7sudan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ta7sudan/postcss-convertpx/issues"
+  },
+  "files": [
+    "src",
+    "dist",
+    "example",
+    "types"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "eslint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "ava": {
+    "cache": true,
+    "babel": false
+  },
+  "nyc": {
+    "cache": true,
+    "include": [
+      "src/**/*.js"
+    ]
+  },
+  "homepage": "https://github.com/ta7sudan/postcss-convertpx#readme",
+  "devDependencies": {
+    "ava": "1.0.0-rc.1",
+    "codecov": "^3.1.0",
+    "eslint": "^5.7.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.1.2",
+    "jsinspect": "^0.12.7",
+    "lint-staged": "^7.3.0",
+    "nyc": "^13.1.0",
+    "postcss": "^7.0.5",
+    "prettier": "^1.14.3"
   }
 }

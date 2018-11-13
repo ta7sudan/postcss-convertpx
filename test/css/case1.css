@@ -1,0 +1,14 @@
+div {
+	width: 20px;/* skip-p2v */
+	height: 30px;
+	color: red;
+	font-size: 18px;
+	line-height: 20px;
+}
+@media (max-width: 320px) {
+	div {
+		width: 40px;
+		font-size: 20px;
+		color: blue;
+	}
+}
