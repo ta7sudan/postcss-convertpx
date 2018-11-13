@@ -1,5 +1,10 @@
 # postcss-convertpx
 
+<!-- [START badges] -->
+![Travis (.com) branch](https://img.shields.io/travis/com/ta7sudan/postcss-convertpx/master.svg) [![codecov](https://codecov.io/gh/ta7sudan/postcss-convertpx/branch/master/graph/badge.svg)](https://codecov.io/gh/ta7sudan/postcss-convertpx) ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) ![npm (tag)](https://img.shields.io/npm/v/postcss-convertpx/latest.svg)
+
+<!-- [END badges] -->
+
 forked from [postcss-px-to-viewport](https://github.com/evrone/postcss-px-to-viewport).
 
 
