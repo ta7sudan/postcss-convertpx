@@ -117,7 +117,7 @@ Default:
 - `scale` (Number) for `vw` will calculate automatic according to `viewportWidth`. for other unit such as `rem`, you can specify `scale` like `scale: 75`, then `1rem = 75px`.
 - `exclude(filepath)` (Function) You can exclude some file by specify this option, which returns a boolean, if `true` will be excluded.
 
-### 
+
 
 ## Skip a declaration
 
